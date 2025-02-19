@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Hi from "./componets/Hi";
+import Todo from "./componets/Todo";
 
 const App = (): JSX.Element => {
   const [count, setCount] = useState<number>(0);
@@ -17,16 +18,7 @@ const App = (): JSX.Element => {
   return (
     <div>
       App
-      <Hi
-        age={10}
-        name="홍길동"
-        count={count}
-        setCount={setCount}
-        add={add}
-        minus={minus}
-      >
-        <p>안녕하세요.</p>
-      </Hi>
+      <Todo />
     </div>
   );
 };
